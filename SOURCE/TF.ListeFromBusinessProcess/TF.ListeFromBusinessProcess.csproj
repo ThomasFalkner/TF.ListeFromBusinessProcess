@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B217121-C637-4BA1-B7E8-773448A7AA51}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TF.ListeFromBusinessProcess</RootNamespace>
+    <AssemblyName>TF.ListeFromBusinessProcess</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\Program Files (x86)\Sage\Sage 100\9.0\Shared\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <DefineDebug>true</DefineDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\Program Files (x86)\Sage\Sage 100\8.1\Shared\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Data, Version=8.1.0.0, Culture=neutral, PublicKeyToken=4ad8971889b881a9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.OfficeLine.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Data.Devices.Main, Version=8.1.0.0, Culture=neutral, PublicKeyToken=4ad8971889b881a9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.OfficeLine.Data.Devices.Main.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Data.Entities.Main, Version=8.1.0.0, Culture=neutral, PublicKeyToken=4ad8971889b881a9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.OfficeLine.Data.Entities.Main.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Engine, Version=8.1.0.0, Culture=neutral, PublicKeyToken=4ad8971889b881a9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.OfficeLine.Engine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Security, Version=8.1.0.0, Culture=neutral, PublicKeyToken=4ad8971889b881a9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.OfficeLine.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Shared, Version=8.1.0.0, Culture=neutral, PublicKeyToken=4ad8971889b881a9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.OfficeLine.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Shared.RealTimeData, Version=8.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.OfficeLine.Shared.RealTimeData.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sagede.Shared.Core, Version=8.1.0.0, Culture=neutral, PublicKeyToken=4ad8971889b881a9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Sagede.Shared.RealTimeData.Common, Version=8.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.Shared.RealTimeData.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sagede.Shared.RealTimeData.Core, Version=8.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.Shared.RealTimeData.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dto\RkiDataElement.cs" />
+    <Compile Include="FremdsystemdatenBusinessProcess.cs" />
+    <Compile Include="DataAccess\GetRkiData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
